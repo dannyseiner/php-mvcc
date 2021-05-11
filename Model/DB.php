@@ -22,3 +22,4 @@ class DB
         return $data;
     }
 }
+

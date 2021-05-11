@@ -6,7 +6,11 @@ class Controller extends DB
   {
     if (file_exists("./View/$view_name.php")) {
       require_once("./View/$view_name.php");
-      static::doSomething();
     }
+  }
+  // SESSION CONTROL
+  public static function SessionExist(String $name)
+  {
+    return isset($_SESSION[$name]);
   }
 }

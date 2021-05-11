@@ -8,7 +8,10 @@ $get_file = explode('/',$full_url);
 $get_file_index = $get_file[count($get_file)-1];
 $_SESSION['file_index'] = $get_file_index;
 if(!file_exists('View/' . $get_file_index . '.php') == 1 && $get_file_index != 'request'){
+  require_once('Components/head.php');
   require_once("View/ErrorPage.php");
+  require_once('Components/scripts.php');
+  return;
 }
 // INDEX
 Route::set('index', function () {

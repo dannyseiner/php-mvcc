@@ -1,8 +1,7 @@
 <?php
 class Index extends Controller
 {
-  public static function doSomething()
-  {
-    echo 'start';
-  }
+
 }
+$ip = gethostbyname("http://localhost/php-mvcc/index");
+echo $ip;
