@@ -8,9 +8,4 @@ class Controller extends DB
       require_once("./View/$view_name.php");
     }
   }
-  // SESSION CONTROL
-  public static function SessionExist(String $name)
-  {
-    return isset($_SESSION[$name]);
-  }
 }
