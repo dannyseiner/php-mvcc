@@ -1,11 +1,12 @@
 <?php
 
-class Index extends Controller
+class View extends Controller
 {
     public static function LoadData()
     {
         // LOAD DATA INTO GLOBAL DATA VARIABLE, DATA WILL BE EXTRACTED
-        self::$data = self::query('SELECT * FROM auta');
+        $load_data = self::query('SELECT * FROM auta');
+        self::$data = $load_data[0];
     }
 }
 // EVENTS

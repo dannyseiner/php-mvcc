@@ -3,7 +3,7 @@
 class Route
 {
     public static $validRoutes = [];
-
+    
     public static function set($route, $function)
     {
         self::isValid($_GET['url']);

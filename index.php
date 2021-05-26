@@ -1,9 +1,9 @@
 <?php
 // LOAD CONFIG
-$_SESSION['config'] = parse_ini_file('app.ini');
+$config = parse_ini_file('app.ini');
 
 // DISPLAY ERRORS FROM CONFIG SETTINGS
-if($_SESSION['config']['mode'] == 'development'){
+if($config['mode'] == 'development'){
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);   
