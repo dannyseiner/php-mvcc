@@ -1,4 +1,6 @@
-# PHP MVC + MySQL(STARTUP)
+# PHP MVCC + MySQL(STARTUP)
+
+Easy way to create php apps from scratch with MVCC.
 
 ## SETUP
 1) Open app.ini 
@@ -7,8 +9,8 @@
 You're ready to go :)
 
 ## DATABASE FUNCTION
-- QUERY => you can select from database with static function query($sql)
-- LoadData => You can create function static function LoadData that will be called before CreateView()
+- QUERY -> you can select from database with static function query($sql)
+- LoadData -> You can create function static function LoadData that will be called before CreateView()
               This allows to use execute() function for better print. Function is called only if exists!
 
 ## CREATE VIEW & CONTROLLER
@@ -19,15 +21,18 @@ You're ready to go :)
 
     url: localhost/phpmvc/login
 
+Controller/Login.php
 ```php
-    Controller/Login.php
         <?php
             class Login extends Controller
             {
                
             }
         ?>
-    View/Login.php
+```      
+
+    View/Login.php    
+```php    
         <div class='container w-25'>
             <form>
                 <input type='text' name='username' placeholder='username'>
