@@ -12,6 +12,6 @@ Route::set($_GET['url'] ,function () {
         1)
             Controller/$name == View/$name == $_GET['url] 
             Index == Index == index
-            ErrorPage == ErrorPage == ErrorPage
+            ErrorPage == ErrorPage == ErrorPage 
     }
 */
