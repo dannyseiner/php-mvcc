@@ -28,35 +28,35 @@ You're ready to go :)
     Controller/Login.php
 ```php
 
-        <?php
-            class Login extends Controller
-            {
-               
-            }
-        ?>
+<?php
+    class Login extends Controller
+    {
+
+    }
+?>
 ```
 
     View/Login.php
 ```php
-        <div class='container w-25'>
-            <form>
-                <input type='text' name='username' placeholder='username'>
-                <input type='password' name='password' placeholder='*******'>
-                <input type='submit' name='login' value='Login'>
-            </form>
-        </div>
+<div class='container w-25'>
+    <form>
+        <input type='text' name='username' placeholder='username'>
+        <input type='password' name='password' placeholder='*******'>
+        <input type='submit' name='login' value='Login'>
+    </form>
+</div>
 ```
 
         
 
 ####    Controller:
-            Class must have same name as the file (Controller/Index, Class Index)
-            Class must have this structure:
-                class {filename} extends Controller{}
-            No need to call any other function, it work automatically :)
+    Class must have same name as the file (Controller/Index, Class Index)
+    Class must have this structure:
+        class {filename} extends Controller{}
+    No need to call any other function, it work automatically :)
 
 ####    View:
-            View file must have same name as controller file and class!
-            Don't use tags { html, head, body } it could brake the site.
-            View content is already wrapped in body tag! 
+    View file must have same name as controller file and class!
+    Don't use tags { html, head, body } it could brake the site.
+    View content is already wrapped in body tag! 
         
