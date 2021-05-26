@@ -19,6 +19,7 @@ You're ready to go :)
 
     url: localhost/phpmvc/login
 
+```php
     Controller/Login.php
         <?php
             class Login extends Controller
@@ -34,7 +35,7 @@ You're ready to go :)
                 <input type='submit' name='login' value='Login'>
             </form>
         </div>
-
+```
         
 
 ####    Controller:
