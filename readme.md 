@@ -1,4 +1,8 @@
-# PHP MVC + MySQL(STARTUP)
+# PHP MVCC + MySQL(STARTUP)
+
+    REQUIRES MySQL DATABASE!!!
+    Easy way how to create PHP apps from scratch with MVCC ( Modal View Controller Component )
+    This template use MDBootstrap 5 and jQuery ( replaceable )
 
 ## SETUP
 1) Open app.ini 

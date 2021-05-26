@@ -19,7 +19,8 @@ class Route
             header("Location: index");
         }
         if (!file_exists("View/".ucfirst($route).".php")) {
-            header('Location: ErrorPage?error_token=404');
+            $_SESSION['error_token'] = 404;
+            header('Location: ErrorPage');
     }
     }
 }
