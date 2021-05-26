@@ -2,14 +2,10 @@
 
 class DB
 {
-    protected static $host = "localhost";
-    protected static $user = "root";
-    protected static $pass = "";
-    protected static $dbname = "rocnikovka";
-
     private static function con()
     {
-        $pdo = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$dbname . ";charset=utf8", self::$user, self::$pass);
+        $config = parse_ini_file('app.ini');
+        $pdo = new PDO("mysql:host=" . $config['dbhost'] . ";dbname=" . $config['database'] . ";charset=utf8", $config['dbuser'], $config['dbpassword']);
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
