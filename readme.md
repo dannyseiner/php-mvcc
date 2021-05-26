@@ -22,7 +22,7 @@ You're ready to go :)
 
 ###     Login site example:
 
-    url: localhost/php-mvcc/login
+url: localhost/php-mvcc/login
 
 
     Controller/Login.php
