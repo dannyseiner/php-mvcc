@@ -8,6 +8,7 @@
 1) Open app.ini 
 2) Setup database connection  
 3) Setup APP Components ( disableable )
+
 You're ready to go :)
 
 ## DATABASE FUNCTION
@@ -21,16 +22,22 @@ You're ready to go :)
 
 ###     Login site example:
 
-    url: localhost/phpmvc/login
+    url: localhost/php-mvcc/login
+
 
     Controller/Login.php
+```php
+
         <?php
             class Login extends Controller
             {
                
             }
         ?>
+```
+
     View/Login.php
+```php
         <div class='container w-25'>
             <form>
                 <input type='text' name='username' placeholder='username'>
@@ -38,6 +45,7 @@ You're ready to go :)
                 <input type='submit' name='login' value='Login'>
             </form>
         </div>
+```
 
         
 
