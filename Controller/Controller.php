@@ -4,10 +4,7 @@ class Controller extends DB
 {
     protected static $data = [];
     protected static $config;
-    public function __construct()
-    {
-        self::loadConfig();
-    }
+
     public static function CreateView($view_name)
     {
         self::loadConfig();

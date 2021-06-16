@@ -15,12 +15,18 @@ class Route
 
     public static function isValid(string $route)
     {
-        if($route == 'index.php') {
-            header("Location: index");
-        }
-        if (!file_exists("View/".ucfirst($route).".php")) {
-            $_SESSION['error_token'] = 404;
-            header('Location: ErrorPage');
-    }
+        // if($route == 'index.php') {
+        //     header("Location: index");
+        // }
+        // if (!file_exists("View/".ucfirst($route).".php")) {
+        //     $_SESSION['error_handler_template'] = [ 
+        //         "header" => "Site doesnt exists",
+        //         "code" => 404,
+        //         "text" => "This website doesn't exists ",
+        //         "file" => $route,
+        //         "line" => "NULL"
+        //     ];
+        //     header('Location: ErrorPage');
+        // }
     }
 }

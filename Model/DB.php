@@ -2,6 +2,7 @@
 
 class DB
 {
+    protected static $config;
     private static function con()
     {
         $config = parse_ini_file('app.ini');
