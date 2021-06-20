@@ -1,7 +1,7 @@
 <?php
 
 // SESSION START
-session_start();
+
 
 Route::set($_GET['url'] ,function () {
     ucfirst($_GET['url'])::CreateView(ucfirst($_GET['url']));

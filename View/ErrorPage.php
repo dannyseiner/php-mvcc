@@ -1,5 +1,4 @@
-<?php print_r( $_SESSION['error_handler_template']);?>
-<div class="container mt-5 text-center mb-5">
+<div class="container mt-5 text-center mb-5" style='height:60vh'>
     <h1>
         <?= $header, ' => ', $code ?>
     </h1>
