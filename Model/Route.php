@@ -4,7 +4,7 @@ class Route
 {
     public static $validRoutes = [];
     
-    public static function set($route, $function)
+    public static function set(string $route, $function)
     {
         self::isValid($_GET['url']);
         self::$validRoutes[] = $route;
