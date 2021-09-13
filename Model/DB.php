@@ -6,7 +6,7 @@ class DB
     private static function con()
     {
         $config = parse_ini_file('app.ini');
-        $pdo = new PDO("mysql:host=" . $config['dbhost'] . ";dbname=" . $config['database'] . ";charset=utf8", $config['dbuser'], $config['dbpassword']);
+        $pdo = new PDO("mysql:host=localhost;dbname=test;charset=utf8", "root", "");
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
@@ -19,4 +19,3 @@ class DB
         return $data;
     }
 }
-
