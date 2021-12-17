@@ -15,8 +15,8 @@ class Route
 
     public static function isValid(string $route)
     {
-        if (!file_exists("View/" . ucfirst($route) . ".php")) {
-            header("Location: index");
+        if (!file_exists("View/" . ucfirst($route) . ".php") && $_GET['url'] !== "notfound") {
+            header("Location: notfound");
         }
     }
 }

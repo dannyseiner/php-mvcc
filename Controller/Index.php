@@ -8,6 +8,6 @@ class Index extends Controller
     }
     public static function dosmth()
     {
-        print_r('ahoj');
+        print_r(self::query_once("SELECT * FROM posts WHERE post_id = 1"));
     }
 }
