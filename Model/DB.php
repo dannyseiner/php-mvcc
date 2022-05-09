@@ -13,12 +13,6 @@ class DB
     }
     public static function query(string $query, $params = array())
     {
-
-        function once(string $query): array
-        {
-            $requrest_queqry = self::query($query);
-            return count($requrest_queqry) == 0 ? [] : $requrest_queqry[0];
-        }
         $stmt = self::con()->prepare($query);
         $stmt->execute($params);
         $data = $stmt->fetchAll();
